@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/app.min.css">
+	
+    <style>
+       .datepicker{
+           z-index: 999;          
+       }       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <!-- .header__side -->  
+                    <div class="header__side">
+                        <a href="#" class="header__logo logo">Frispes.</a>
+                    </div>       
+                    <!-- /.header__side --> 
+                     <!-- header__burger-->          
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <!--/.header__burger-->
+                    <!-- header__nav-->
+                    <div class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="" class="header__nav-link header__nav-link_active">Home</a></li>
+                            <li class="header__nav-item"><a href="" class="header__nav-link">Workspace</a></li>
+                            <li class="header__nav-item"><a href="" class="header__nav-link">Service</a></li>
+                            <li class="header__nav-item"><a href="" class="header__nav-link">Events</a></li>
+                            <li class="header__nav-item"><a href="" class="header__nav-link">Reviews</a></li>
+                            <li class="header__nav-item"><a href="" class="header__nav-link">Contact Us</a></li>                                                  
+                        </ul>  
+                    </div>        
+                    <!-- /.header__nav -->  
+                    <!-- .header__side -->                    
+                    <div class="header__side header__login"> 
+                        <a href="#" target="_blank" class="header__login-link login-link">Log in</a>
+                        <a href="#" target="_blank" class="button button_primary">Sign Up</a>
+                    </div>                    
+                    <!-- /.header__side -->                        
+                </div>
+                <!-- /.header__content -->
+            </div>
+            <!-- /.container -->    
+        </header>
+        <!-- /.header -->
+        <main class="main">            
+            <!-- HERO SECTION -->
+            <section class="section hero">
+                <div class="container">
+                    <div class="section__intro section-intro section-intro_dark">Introducing</div>
+                    <div class="hero__header">                                        
+                        <h1 class="hero__title section-title section-title_dark section-title_main">
+                        <span>Revolutionary</span> co-working space to realize your innovation</h1>
+                        <div class="hero__description section-description">
+                            In frispes, we spearhead new initiatives and provide 
+                            mentorship to a new startup, and help grow their 
+                            opportunities in key local, regional and global markets
+                        </div><!-- /.section__description -->
+                    </div>
+                    <!-- /.hero__header -->
+                </div> <!-- /.container -->  
+                <div class="hero__content">
+                    <div class="swiper hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__bg swiper-lazy" data-background="images/dist/hero-slide1.jpg">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div><!--/.swiper-slide -->  
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__bg swiper-lazy" data-background="images/dist/hero-slide2.jpg">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div><!--/.swiper-slide -->  
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__bg swiper-lazy" data-background="images/dist/space1.jpg">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div><!--/.swiper-slide -->                
+                        </div><!--/.swiper-wrapper -->
+                        <div class="hero-pagination swiper-pagination"></div>
+                    </div> 
+                    <div class="hero__inner">
+                        <div class="container">
+                            <form action="" class="hero__form form">
+                                <h3 class="form__title">Find your space now</h3>
+                                <!-- select country-->
+                                <div class="form__select select">
+                                    <div class="select__placeholder">Location</div>
+                                    <div class="select__button">Malang, Indonezia</div>
+                                    <input type="hidden" name="location" class="select__input-hidden">
+                                    <ul class="select__list">
+                                        <li data-value="kyiv" class="select__item">Kyiv, Ukraine</li>
+                                        <li data-value="dnipro" class="select__item">Dnipro, Ukraine</li>
+                                        <li data-value="lviv" class="select__item">Lviv, Ukraine</li>
+                                    </ul>                            
+                                </div>
+                                <!-- /select country-->
+                                <!-- select office type-->
+                                <div class="form__select select">
+                                    <div class="select__placeholder">Type</div>
+                                    <div class="select__button">Private Office</div>
+                                    <input type="hidden" name="type" class="select__input-hidden">
+                                    <ul class="select__list">
+                                        <li data-value="private" class="select__item">Private Office</li>
+                                        <li data-value="open" class="select__item">Open Office</li>
+                                        <li data-value="сonference" class="select__item">Сonference hall</li>
+                                    </ul>                            
+                                </div>
+                                <!-- /select office type-->                                                             
+                                <!-- select date-->
+                                <div class="form__select datapic">
+                                    <div class="datapic__placeholder">Date</div>
+                                    <input type="text" class="datapic__input" name="foo" value=" ">       
+                                </div>
+                                <!-- /select date-->                                            
+                                <button class="button button_primary button_main form__button">find my space</button>
+                            </form>
+                            <!-- /.hero__form -->
+                        </div>
+                        <!-- /.container -->
+                    </div>
+                    <!-- /.hero__inner -->
+                </div>
+                <!-- /.hero__content -->                             
+            </section>
+            <!-- /HERO SECTION --> 
+            <!--- OUR SPACES --->
+            <section class="section spaces">
+                <div class="container">
+                    <div class="section__header spaces__header">
+                        <h2 class="spaces__title section-title section-title_dark">Our Spaces</h2>
+                        <div class="spaces__description section-description">Our space is designed to give you a different experience when working with your team or personally </div>
+                        <div class="spaces__navigation my-navigation-buttons">              
+                            <div class="spaces-button-prev  my-button-prev"></div>
+                            <div class="spaces-button-next  my-button-next"></div>
+                        </div>            
+                    </div>
+                    <!-- /.spaces__header -->
+                </div>
+                <!-- /.container -->
+                <div class="container">
+                    <div class="spaces-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-custom-office.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">Custom office</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">Custom office</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-preview.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">working with team</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">working with team</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-private.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">space private</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">space private</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-custom-office.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">Custom office</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">Custom office</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-preview.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">working with team</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">working with team</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="space">
+                                    <a href="#" target="_blank" class="space__preview ibg">
+                                        <img data-src="images/dist/space-private.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>                                            
+                                    </a>
+                                    <div class="space__body">space private</div>
+                                    <div class="space__info">
+                                        <h3 class="space__info-title">space private</h3>
+                                        <div class="space__info-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</div>
+                                    </div>                    
+                                    <a href="#" class="space__badge" target="_blank">
+                                        <span class="info-badge">Check avaibility</span>
+                                    </a>
+                                </div>
+                                <!-- /.space -->
+                            </div>
+                            <!-- /.swiper-slide -->
+                        </div>
+                        <!-- /.spaces-wrapper -->
+                    </div>
+                    <!-- /.spaces-slider -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!--- /OUR SPACES ---> 
+            <!--- OUR BENEFITS --->
+            <section class="section benefits">
+                <div class="container">
+                    <div class="benefits__content">
+                        <div class="benefits__col">
+                            <div class="support">
+                                <div class="support__row">
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#meeting-room"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">500+</h3>
+                                                <div class="item-support__text">Meeting rooms</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.support__col -->
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#circus"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">100+</h3>
+                                                <div class="item-support__text">Event spaces</div>
+                                            </div>
+                                        </div>
+                                        <!-- /.item-support --> 
+                                    </div>
+                                    <!-- /.support__col -->
+                                </div>
+                                <!-- /.support__row -->
+                                <div class="support__row">
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#flag"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">60+</h3>
+                                                <div class="item-support__text">Countries</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.support__col -->
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#wifi"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">500 Mbps</h3>
+                                                <div class="item-support__text">Internet speed</div>
+                                            </div>
+                                        </div>
+                                        <!-- /.item-support --> 
+                                    </div>
+                                    <!-- /.support__col -->
+                                </div>
+                                <!-- /.support__row --> 
+                                <div class="support__row">
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#user"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">5K+</h3>
+                                                <div class="item-support__text">Startup mentors</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.support__col -->
+                                    <div class="support__col">
+                                        <div class="item-support">
+                                            <svg class="item-support__icon"><use xlink:href="images/dist/sprite.svg#circus"></use></svg>
+                                            <div class="item-support__content">
+                                                <h3 class="item-support__title">200+</h3>
+                                                <div class="item-support__text">Communities inside </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.item-support --> 
+                                    </div>
+                                    <!-- /.support__col -->
+                                </div>
+                                <!-- /.support__row -->                                          
+                            </div>
+                            <!-- /.support -->
+                        </div><!-- /.benefits__col -->            
+                        <div class="benefits__col">
+                            <div class="benefits__body">
+                                <p class="benefits__intro section-intro section-intro_light">Why Frispes</p>
+                                <h2 class="benefits__title section-title section-title_light">We revolutionize your workspace</h2>
+                                <div class="benefits__description section-description section-description_light">
+                                    With a decade of insights and expertise, we're decided 
+                                    to reimagine co-working space, designed to help a new
+                                    startup grow up and realize their ideas so they can give a positive impacts on many people
+                                </div>
+                            </div>
+                            <!-- /.benefits__body -->                            
+                        </div>
+                        <!-- /.benefits__col -->
+                    </div>
+                    <!-- /.benefits__content -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.section benefits -->
+            <!--- /OUR BENEFITS --->
+            <!-- OUR FACILITIES-->
+            <section class="section facitilies">
+                <div class="container">
+                    <div class="section__header facitilies__header">
+                        <div class="facitilies__intro section-intro section-intro_dark">Our Facilities</div>
+                        <h2 class="facitilies__title section-title section-title_dark">All facilities are designed to meet all your needs</h2>
+                    </div>
+                </div>
+                <!-- /.container -->
+                <div class="container">
+                    <div class="facitilies-slider">
+                        <div class="facitilies-slider__image">
+                            <div class="swiper-wrapper">
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide1.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide1" title="slide1"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide2.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide2" title="slide2"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide3.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide3" title="slide3"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide4.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide4" title="slide4"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide5.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide5" title="slide5"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>
+                                    <div class="swiper-slide ibg">
+                                        <img data-src="images/dist/slide6.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="slide6" title="slide6"/>
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </div>                       
+                            </div> <!-- /.swiper-wrapper -->            
+                        </div> <!-- /.facitilies-slider__image-->
+                        <div class="facitilies-slider__text">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="facitilies-slider__text-slide">Spacious parking area</div></div>
+                                <div class="swiper-slide"><div class="facitilies-slider__text-slide">Comfortable spaces</div></div>
+                                <div class="swiper-slide"><div class="facitilies-slider__text-slide">Cozy cafe</div></div>
+                                <div class="swiper-slide"><div class="facitilies-slider__text-slide">Child playground</div></div>
+                                <div class="swiper-slide"><div class="facitilies-slider__text-slide">Outdoor spaces</div></div>                   
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>  <!-- /.facitilies-slider__text-->                      
+                    </div>
+                    <!-- /.facitilies-slider --> 
+                </div>
+                <!-- /.container -->            
+            </section>
+            <!-- /OUR FACILITIES--> 
+            <!--- SECTION GALLERY --->
+            <section class="section gallery">
+                <div class="gallery__headline">
+                    <div class="container">
+                        <div class="gallery__header">
+                            <div class="section__intro section-intro section-intro_dark">
+                                Frispes gallery
+                            </div>
+                            <!-- /.section__intro section-intro -->
+                            <h2 class="gallery__title  section-title section-title_dark">
+                                Immersive beautiful  co-working space gallery
+                            </h2>
+                            <!-- /.section__title section-title section-title_dark -->
+                            <!-- Gallery slider navigation-->
+                            <div class="gallery__navigation my-navigation-buttons">              
+                                <div class="gallery-button-prev my-button-prev"></div>
+                                <div class="gallery-button-next my-button-next"></div>
+                            </div> 
+                            <!-- /Gallery slider navigation-->       
+                        </div>
+                        <!-- /.gallery__header -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- /.gallery__headline -->                
+                <div class="gallery-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide2.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 1" title="Office 1"/>
+                                <div class="swiper-lazy-preloader"></div>  
+                            </div>                                                            
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/hero-slide2.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 2" title="Office 2"/>
+                                <div class="swiper-lazy-preloader"></div>  
+                            </div>
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide1.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 3" title="Office 3"/>
+                                <div class="swiper-lazy-preloader"></div> 
+                            </div>                                                            
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide3.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 4" title="Office 4"/>
+                                <div class="swiper-lazy-preloader"></div> 
+                            </div>
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide4.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 5" title="Office 5"/>
+                                <div class="swiper-lazy-preloader"></div> 
+                            </div>                                                            
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide5.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 6" title="Office 6"/>
+                                <div class="swiper-lazy-preloader"></div> 
+                            </div>
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <!-- /.swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="gallery-slider__slide ibg">
+                                <img data-src="images/dist/slide7.jpg" src="images/dist/1x1.png" class="swiper-lazy" alt="Office 7" title="Office 7"/>
+                                <div class="swiper-lazy-preloader"></div> 
+                            </div>                                                            
+                            <!-- /.gallery-slider__slide -->
+                        </div>
+                        <!-- /.swiper-slide -->           
+                    </div>
+                    <!-- /.swiper-wrapper -->
+                </div>
+                <!-- /.gallery-slider -->
+            </section>
+            <!-- /.section gallery -->
+            <!--- /SECTION GALLERY --->
+            <!--- CUSTOMERS --->
+            <section class="section customers">
+                <div class="container">
+                    <h2 class="customers__title section-title section-title_dark">Who uses Frispes?</h2>
+                    <div class="customers__description section-description">Big brands, small bussiness, new startuo and inividuals</div>
+                </div><!--- /.container --->
+                <div class="container">     
+                    <!--- CUSTOMERS SLIDER --->
+                    <div class="customers-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/google-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="Google" title="Google">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/tokopedia-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="tockopedia" title="tockopedia">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/upwork-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="upwork" title="upwork">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/microsoft-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="microsoft" title="microsoft">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/shopify-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="shopify" title="shopify">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/stripe-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="stripe" title="stripe">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/google-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="Google" title="Google">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/tokopedia-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="tockopedia" title="tockopedia">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/upwork-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="upwork" title="upwork">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/microsoft-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="microsoft" title="microsoft">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/shopify-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="shopify" title="shopify">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img data-src="images/dist/customers/stripe-logo.png" src="images/dist/1x1.png" class="swiper-lazy" alt="stripe" title="stripe">
+                                <div class="swiper-lazy-preloader"></div>
+                            </div>                               
+                        </div><!--- /.swiper-wrapper-->                
+                    </div> <!--/customers-slider-->
+                    <!--- CUSTOMERS SLIDER --->     
+                </div>
+                <!-- /.container -->       
+            </section>
+            <!--- /CUSTOMERS --->
+            <!--- REVIEWS --->
+            <section class="section reviews">
+                <div class="container">
+                    <div class="section__header reviews__header">
+                        <div class="reviews__header-left">
+                            <div class="section__intro section-intro section-intro_dark">Reviews</div>
+                            <h2 class="section__title section-title section-title_dark">What our customers are saying</h2>
+                        </div>
+                        <!-- /.section__header-left -->
+                        <!-- REVIEWS SLIDER NAVIGATION -->
+                        <div class="reviews__header-right my-navigation-buttons"> 
+                            <div class="reviews-button-prev my-button-prev"></div>
+                            <div class="reviews-button-next my-button-next"></div>                              
+                        </div>
+                        <!-- /REVIEWS SLIDER NAVIGATION --> 
+                    </div>
+                    <!-- /.section__header -->                
+                </div>
+                <!-- /.container --> 
+                <div class="container-fluid">
+                    <!--REVIEWS SLIDER-->
+                    <div class="reviews-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide review">
+                                <div class="review__text review__text_light">
+                                    Our team has been working at frispes for almost 2 
+                                    months because our office still closed. During working 
+                                    at frispes, we feel a new experience, we can feel working 
+                                    with a beautiful, modern, and comfortable space. And cozy 
+                                    cafe with high-speed internet  in there. Thank you for frispes and team.
+                                </div>
+                                <!-- /.review__text -->
+                                <div class="review__author author">
+                                    <div class="author__photo">
+                                        <img src="images/dist/review-pedro.jpg" alt="Pedro Ibanez" title="Pedro Ibanez" class="img-response">
+                                    </div>
+                                    <!-- /.author__photo -->                        
+                                    <div class="author__body">
+                                        <h6 class="author__name author__name_light">Pedro Ibanez</h6>
+                                        <p class="author__position author__position_light">UI Designer at Google</p>
+                                    </div>
+                                </div> 
+                                <!--/.review__author author -->       
+                            </div>
+                            <!-- /.review -->
+                            <div class="swiper-slide">
+                                <div class="review">
+                                    <div class="review__text review__text_light">
+                                        The high-speed internet at frispes was so amazing. 
+                                        I can get best experience when running video call with my clients.
+                                        Frispes has spacious and safe parking area, that’s what i need because 
+                                        i used to work as freelancer for a long time.
+                                    </div>
+                                    <!-- /.review__text -->
+                                    <div class="review__author author">
+                                        <div class="author__photo">
+                                            <img src="images/dist/review-rimond.jpg" alt="Raymond Thual" title="Raymond Thual" class="img-response">
+                                        </div>
+                                        <!-- /.author__photo -->                        
+                                        <div class="author__body">
+                                            <h6 class="author__name author__name_light">Raymond Thual</h6>
+                                            <p class="author__position author__position_light">Professional Freelancer</p>
+                                        </div>
+                                    </div> 
+                                    <!--/.review__author author -->
+                                </div>
+                                <!--/.review -->
+                            </div>         
+                            <!-- /.swiper-slide--> 
+                            <div class="swiper-slide">
+                                <div class="review">
+                                    <div class="review__text review__text_light">                                
+                                        Just three words : Frispes is Awesome!
+                                    </div>
+                                    <!-- /.review__text -->
+                                    <div class="review__author author">
+                                        <div class="author__photo">
+                                            <img src="images/dist/review-yuli.jpg" alt="" title="" class="img-response">
+                                        </div>
+                                        <!-- /.author__photo -->                        
+                                        <div class="author__body">
+                                            <h6 class="author__name author__name_light">Yuli Berlian</h6>
+                                            <p class="author__position author__position_light">IOS Dev at Tokopedia</p>
+                                        </div>
+                                    </div> 
+                                    <!--/.review__author author -->  
+                                </div>
+                                <!-- /.review -->                         
+                            </div>
+                            <!-- /.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="review">
+                                    <div class="review__text review__text_light">
+                                        Out of concern for the health and safety of our developers, employees, and local communities
+                                    </div>
+                                    <!-- /.review__text -->
+                                    <div class="review__author author">
+                                        <div class="author__photo">
+                                            <img src="images/dist/review-rimond.jpg" alt="Sundar pichai" title="Sundar pichai" class="img-response">
+                                        </div>
+                                        <!-- /.author__photo -->                        
+                                        <div class="author__body">
+                                            <h6 class="author__name author__name_light">Sundar pichai</h6>
+                                            <p class="author__position author__position_light">CEO at Google</p>
+                                        </div>
+                                    </div> 
+                                    <!--/.review__author author -->  
+                                </div>
+                                <!-- /.review -->                         
+                            </div>
+                            <!-- /.swiper-slide -->                                                  
+                        </div>
+                        <!--/.swiper-wrapper-->
+                    </div>
+                    <!--/.swiper-->                  
+                    <!--/REVIEWS SLIDER-->                
+                </div>
+                <!-- /.container-fluid -->       
+            </section>
+            <!-- /.section reviews -->
+            <!--- /REVIEWS --->
+            <!--- FAG --->
+            <section class="section faq">
+                <div class="container">
+                    <h2 class="faq__title section-title section-title_dark">Find the answers to anything you need in our Help Center</h2>
+                    <div class="faq__content accordion">
+                        <div class="faq__col">
+                            <div class="accordion__item">
+                                <div class="accordion__item-header">How do I know if a space is available?</div>
+                                <div class="accordion__item-body">
+                                    <div class="accordion__item-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Sint quas nam dolorem ut rem fuga est porro odio, 
+                                        eaque at earum a, accusamus blanditiis error eius totam ea.
+                                        Cumque, impedit?
+                                    </div>                                         
+                                </div>                   
+                            </div>
+                            <!-- /.accordion__item -->
+                        </div>
+                        <!-- /.faq__col -->
+                        <div class="faq__col">
+                            <div class="accordion__item">
+                                <div class="accordion__item-header">How do i book a space?</div>
+                                <div class="accordion__item-body">
+                                    <div class="accordion__item-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Sint quas nam dolorem ut rem fuga est porro odio, 
+                                        eaque at earum a, accusamus blanditiis error eius totam ea.
+                                        Cumque, impedit?
+                                    </div>                                        
+                                </div>                    
+                            </div>
+                            <!-- /.accordion__item -->
+                        </div>
+                        <!-- /.faq__col -->
+                        <div class="faq__col">
+                            <div class="accordion__item">
+                                <div class="accordion__item-header">How do reviews work?</div>
+                                <div class="accordion__item-body">
+                                    <div class="accordion__item-content">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                                        elit. Sint quas nam dolorem ut rem fuga est porro odio, 
+                                        eaque at earum a, accusamus blanditiis error eius totam ea.
+                                        Cumque, impedit?
+                                    </div>                
+                                </div>                 
+                            </div>
+                            <!-- /.accordion__item -->
+                        </div>
+                        <!-- /.faq__col -->              
+                    </div>
+                    <!-- /faq__content .accordion -->
+                    <div class="faq__bottom">
+                        <a href="" class="more-link">More questions</a>
+                    </div>
+                    <!-- /.faq__bottom -->
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.section faq -->
+            <!--- /FAG --->
+            <!--- BLOG --->
+            <section class="section section_middle-color blog">
+                <div class="container">
+                    <div class="section__header blog__header">
+                        <h2 class="blog__title section-title section-title_dark">News, events and insights for you</h2>
+                        <a href="" class="more-link">See more</a>
+                    </div>
+                    <!-- /.section__header -->                    
+                    <div class="blog__content">
+                        <div class="blog__col">
+                            <a  href="#" class="feautered-post" target="_blank">
+                                <div class="feautered-post__preview"> 
+                                    <img data-src="images/dist/feautered-post.jpg" src="images/dist/1x1.png" 
+                                    alt="Google I / O 2020 news update" title="Google I / O 2020 news update">                    
+                                </div>
+                                <div class="feautered-post__body">
+                                    <h5 class="feautered-post__title"> Google I / O 2020 news update</h5>
+                                    <div class="feautered-post__excerpt">
+                                        Out of concern for the health and safety of our developers,
+                                        employees, and local communities — and in line with recent ...
+                                    </div>
+                                    <div class="feautered__author author">
+                                        <div class="author__photo">
+                                            <img data-src="images/dist/author.jpg" src="images/dist/1x1.png" 
+                                            alt="Sundar pichai" title="Sundar pichai">  
+                                        </div>
+                                        <div class="author__body">
+                                            <h6 class="author__name author__name_dark">Sundar pichai</h6>
+                                            <p class="author__position">CEO at Google</p>
+                                        </div>
+                                    </div> 
+                                <!--/.feautered__author author -->                          
+                                </div>
+                            </a> 
+                            <!-- /.blog__item feautered-post -->
+                        </div>
+                        <!-- /.blog__col -->
+                        <div class="blog__col">
+                            <a href="#" class="post" target="_blank">
+                                <div class="post__preview">
+                                    <img data-src="images/dist/slide7.jpg" src="images/dist/1x1.png" 
+                                    alt="Minimal workspace for inspirations" title="Minimal workspace for inspirations">    
+                                </div>
+                                <div class="post__body">
+                                    <h6 class="post__title">Minimal workspace for inspirations</h6>
+                                    <p class="post__author">Anthony Masional</p>
+                                </div>
+                                <!-- /.post__body -->
+                            </a>
+                            <!-- /.post -->
+                        </div>
+                        <!-- /.blog__col -->
+                        <div class="blog__col">
+                            <a href="#" class="post" target="_blank">
+                                <div class="post__preview">
+                                    <img data-src="images/dist/post2.jpg" src="images/dist/1x1.png" 
+                                    alt="Does productivity increase when working remotely?" 
+                                    title="Does productivity increase when working remotely?">                         
+                                </div>
+                                <div class="post__body">
+                                    <h6 class="post__title">Does productivity increase when working remotely ? </h6>
+                                    <p class="post__author">Franck Martin</p>
+                                </div>
+                                <!-- /.post__body -->
+                            </a>
+                            <!-- /.post -->
+                        </div>
+                        <!-- /.blog__col -->
+                        <div class="blog__col">
+                            <a  href="#" class="post" target="_blank">
+                                <div class="post__preview">
+                                    <img data-src="images/dist/post.jpg" src="images/dist/1x1.png" 
+                                    alt="Morning routine to boost your mood" 
+                                    title="Morning routine to boost your mood"> 
+                                </div>
+                                <div class="post__body">
+                                    <h6 class="post__title">Morning routine to boost your mood</h6>
+                                    <p class="post__author">Elizabeth swan</p>
+                                </div>
+                                <!-- /.post__body -->
+                            </a>
+                            <!-- /.post -->
+                        </div>
+                        <!-- /.blog__col -->
+                        <div class="blog__col">
+                            <a href="#" class="post" target="_blank">
+                                <div class="post__preview">
+                                    <img data-src="images/dist/slide4.jpg" src="images/dist/1x1.png" 
+                                    alt="5+ tips to find comfortable co-working space" 
+                                    title="5+ tips to find comfortable co-working space"> 
+                                </div>
+                                <div class="post__body">
+                                    <h6 class="post__title">5+ tips to find comfortable co-working space</h6>
+                                    <p class="post__author">Mykola Ilschenko</p>
+                                </div>
+                                <!-- /.post__body -->
+                            </a>
+                            <!-- /.post -->
+                        </div>
+                        <!-- /.blog__col -->
+                    </div>
+                    <!-- /.blog__content -->        
+                </div>
+                <!-- /.container -->
+            </section>
+            <!-- /.section blog --> 
+            <!--- /BLOG --->
+            <!--- MEMBER --->
+            <section class="member section section_dark-color">
+                <div class="container">
+                    <div class="member__content">
+                            <div class="member__intro section-intro section-intro_light">Became a member</div>
+                            <h2 class="member__title section-title section-title_light">Ready to try different work experience now?</h2>
+                            <div class="member__description section-description section-description_light">
+                            Get the best working experience that you never feel before
+                            </div>
+                            <button class="member__button button button_primary button_main button_cta">sing up now</button>
+                    </div> 
+                    <!-- /.member__content -->              
+                </div>
+                <!-- /.container --> 
+            </section>
+            <!-- /.section member -->
+            <!--- /MEMBER --->           
+        </main>
+        <!-- /.main --> 
+        <!-- FOOTER -->
+        <div class="footer footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__col">
+                        <div class="footer__widget widget">
+                            <div class="widget__content">
+                                <a href="" class="footer__logo logo"><img src="images/dist/Frispes-white.svg" alt="" class="logo__img"></a>
+                            </div>
+                        </div>
+                        <div class="footer__widget widget">
+                            <div class="widget__content widget__text">
+                                We offer comfortable spaces, cozy cafe, high-speed internet, 
+                                spacious parking area and many more for your best workspaces and meetings
+                            </div>
+                        </div>
+                        <div class="footer__widget widget">
+                                <ul class="widget__list social">
+                                    <li class="social__item">
+                                        <a href="#" target="_blank" class="social__link">
+                                        <svg class="icon"><use xlink:href="images/dist/sprite.svg#Instagram"></use></svg></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" target="_blank" class="social__link">
+                                        <svg class="icon"><use xlink:href="images/dist/sprite.svg#YouTube"></use></svg></a>
+                                    </li>
+                                    <li class="social__item">
+                                        <a href="#" target="_blank" class="social__link">
+                                        <svg class="icon"><use xlink:href="images/dist/sprite.svg#facebook"></use></svg></a>
+                                    </li>									
+                                </ul>
+                                <!--/.widget__list social -->                        
+                        </div>   
+                        <!--/.footer__widget widget -->                 
+                    </div>
+                    <!-- /.footer__col -->
+                    <div class="footer__col">
+                        <div class="footer__widget widget">
+                            <h3 class="widget__title">Spaces</h3>
+                            <ul class="widget__content widget__menu">
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Co-working spaces</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Meeting rooms</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Event spaces</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Child playground</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Cafe & resto</a>
+                                </li>                                                      
+                            </ul> 
+                        </div>
+                        <!-- /.footer__widget widget -->
+                    </div>
+                    <!-- /.footer__col -->
+                    <div class="footer__col">
+                        <div class="footer__widget widget">
+                            <h3 class="widget__title">Company</h3>
+                            <ul class="widget__content widget__menu">
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">About Us</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Pricing</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Careers</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Press</a>
+                                </li>                                                                        
+                            </ul> 
+                        </div>
+                        <!-- /.footer__widget widget -->
+                    </div>
+                    <!-- /.footer__col -->
+                    <div class="footer__col">
+                        <div class="footer__widget widget">
+                            <h3 class="widget__title">Support</h3>
+                            <ul class="widget__content widget__menu">
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">FAQs</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Privacy Policy</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <a href="#" target="_blank" class="widget__menu-link">Help</a>
+                                </li>                                                                                                
+                            </ul> 
+                        </div>
+                        <!-- /.footer__widget widget -->
+                    </div>
+                    <!-- /.footer__col -->
+                    <div class="footer__col">
+                        <div class="footer__widget widget">
+                            <h3 class="widget__title">Contact Us</h3>
+                            <ul class="widget__content widget__menu">
+                                <li class="widget__menu-item">
+                                    <span>E. </span> <a href="mailto:Hello@frispes.com" target="_blank" class="widget__menu-link">Hello@frispes.com</a>
+                                </li>
+                                <li class="widget__menu-item">
+                                    <span>A. </span>Jalan Jayakatwang No.301 Ngasem, Kediri
+                                </li>
+                                <li class="widget__menu-item">
+                                    <span>P. </span><a href=”tel:+6282334670000” target="_blank" class="widget__menu-link">(+62) 82334670000</a>
+                                </li>                                                                                                
+                            </ul> 
+                        </div>
+                        <!-- /.footer__widget widget -->
+                    </div>
+                    <!-- /.footer__col -->            
+                </div>
+                <!-- /.footer__row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer footer -->
+        <!-- /FOOTER -->
+    </div>
+    <!-- /.wrapper -->     
+  
+ <script src="js/app.min.js"></script>    
+</body>
+</html>
+
