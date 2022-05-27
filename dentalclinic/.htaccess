@@ -1,0 +1,2 @@
+# Add to correct work with html include files <!--#include virtual="*.html" -->
+AddHandler server-parsed html
