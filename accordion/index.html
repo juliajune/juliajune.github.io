@@ -152,7 +152,8 @@
 
 
 		const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
-		accordionItemHeaders.forEach(accordionItemHeader => {
+		//accordionItemHeaders.forEach(accordionItemHeader => {
+		Array.prototype.forEach(accordionItemHeader => {
 			accordionItemHeader.addEventListener("click", event => {
 				const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
 				if((currentlyActiveAccordionItemHeader) && (currentlyActiveAccordionItemHeader!==accordionItemHeader)) {
