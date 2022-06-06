@@ -7,6 +7,17 @@
 <body> 
 	Hello, world!  
 	It's me
-	
+	<p class="par">Lorem ipsum dolor sit amet.</p>
+	<p class="par">Lorem ipsum dolor sit amet.</p>
+	<p class="par">Lorem ipsum dolor sit amet.</p>
+	<p class="par">Lorem ipsum dolor sit amet.</p>	
+	<script>
+		let pars=document.querySelectorAll('.par');
+		[].forEach.call(pars, function(element, index, list) { 
+			console.log(element, index);
+			}
+		);
+
+	</script>
 </body>
 </html>
