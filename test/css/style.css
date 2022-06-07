@@ -2,3 +2,10 @@ body{
     background-color: white;
     color: black;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    /* IE10+ specific styles go here */
+    body{
+        background-color: rgb(138, 21, 21);
+        color: white;
+    }
+ }
