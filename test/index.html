@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">  
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]-->
-    <!--[if IE11]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]-->
-    <!--[if IE 11]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]--> 
-    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]-->          
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]-->             
  </head>
 <body>
     <h1>hello, world</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aut?</p>
-    
+    <p>Во всехбраузерах, кроме IE  фон будет белым</p>
+    <p>Переключай версии браузера IE в консоли, и ты увидишь, что</p>
+    <ul>
+        <li>Для IE 10 и 11 фон красный</li>
+        <li>Для IE 9 и ниже фон черный </li>
+    </ul>
+    <script src="js/script.js"></script>
+    <!--[if IE]><script src="js/js-ie.js"></script>><![endif]--> 
+    <!--[if IE 10]><script src="js/js10.js"></script>><![endif]-->
+    <!--[if IE 11]><script src="js/js11.js"></script>><![endif]-->  
 </body>
 </html>
