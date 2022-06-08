@@ -1,3 +1,4 @@
+
 .preview{
     height: 200px;
     width: 300px;
@@ -8,18 +9,19 @@
     height: 100%;
     display: block;
     object-fit: cover;
+    object-position: center;
 }
 
 /* Styles to IE10+*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-    .ibg{
+    .preview{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
     }
         
-    .ibg img{        
+    .preview img{        
         width: 0;
         height: 0;
         position: absolute;
