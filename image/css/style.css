@@ -14,14 +14,14 @@
 
 /* Styles to IE10+*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-    .preview{
+    .ibg{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
     }
         
-    .preview img{        
+    .ibg img{        
         width: 0;
         height: 0;
         position: absolute;
