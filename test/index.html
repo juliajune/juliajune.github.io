@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=10,11"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">  
-    <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie11.css"/><![endif]-->  
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="css/ie.css"/><![endif]-->  
           
  </head>
 <body>
-    <h1>hello, world</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aut?</p>
-    <p>Во всехбраузерах, кроме IE  фон будет белым</p>
+    <h1>Хаки для IE</h1>
+    <h2>Стили</h2>
+    <p>Во всех браузерах, кроме IE  фон будет белым</p>
     <p>Переключай версии браузера IE в консоли, и ты увидишь, что</p>
     <ul>
         <li>Для IE 10 и 11 фон красный</li>
         <li>Для IE 9 и ниже фон черный </li>
     </ul>
+    <p>В браузерах IE версий 9 и ниже  сработает файл стилей, подключенный в  <!--[if IE]> тут <![endif]-->  </p>
+    <P>В браузерах  IE 10 и IE 11 сработают стили в медиазапросе в основном файле стилей style.css</P>
+    <h2>Скрипты</h2>
+    <p>Переключай версии браузера IE в консоли, и ты увидишь в выводе через console.log, что</p>
+    <ul>
+        <li>Для IE 11 подключился кусок кода в основном файле для скриптов script.js</li>
+        <li>Для IE 9 подключился файл скриптов js-ie.js, подключенный в <!--[if IE]> тут <![endif]--> </li>
+        <li>Тут  <a href="https://www.geeksforgeeks.org/how-to-check-the-user-is-using-internet-explorer-in-javascript/">еще вариант определения версий IE</a></li>
+    </ul>
     <script src="js/script.js"></script>
-    <!--[if IE]><script src="js/js-ie.js"></script><![endif]--> 
-    <!--[if IE 10]><script src="js/js10.js"></script><![endif]-->
-    <!--[if IE 11]><script src="js/js11.js"></script><![endif]--> 
-    <script>
-         var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
-        // true on IE11
-        // false on Edge and other IEs/browsers. 
-        console.log(isIE11);
-        if (isIE11 == true){
-            alert('IE11');
-        }
-
-    </script>
-   
+    <!--[if IE]><script src="js/js-ie.js"></script><![endif]-->    
 </body>
 </html>

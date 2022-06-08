@@ -2,6 +2,8 @@ body{
     background-color: white;
     color: black;
 }
+
+/* Styles to IE10+*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
     /* IE10+ specific styles go here */
     body{
