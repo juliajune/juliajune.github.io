@@ -1,22 +1,15 @@
-// // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
-//import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
 
-// -- Swiper plugin--
-import Swiper, {Pagination, Autoplay, Mousewheel} from 'swiper';
+import Swiper from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
 	/*--  TESTIMONIALS SLIDER --*/   
 	let sliderTestimonials = new Swiper('.testimonials-slider', {
-		modules: [Pagination,  Autoplay, Mousewheel],
-		
 		autoplay: {
 			delay: 3000,           
 		},
-		lazy: true,
 		loop: true,
-		loopedSlides: 1,
-		slidesPerView: 1,
+		loopedSlides: 3,
+		slidesPerView: 3,
 		mousewheel: true,		
 		spaceBetween: 30,  
 		pagination: {
@@ -25,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		},  
 		breakpoints: {
 			992: {
-				loopedSlides: 3,
-				slidesPerView: 3,
+				loopedSlides: 1,
+				slidesPerView: 1,
 				spaceBetween: 60, 	
 				mousewheel: false,			             
 			},
@@ -43,6 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
 		menuBody.classList.toggle('active');       
 	});
 	/*--/BURGER MENU --*/
+
+	/*-- IE 11 image--*/
+	var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+	// true on IE11
+	// false on Edge and other IEs/browsers. 
+	if (isIE11 == true){
+		function ibg(){
+			let ibg=document.querySelectorAll(".ibg");
+				for (var i = 0; i < ibg.length; i++) {
+				if(ibg[i].querySelector('img')){
+				ibg[i].style.backgroundImage = 'url('+ibg[i].querySelector('img').getAttribute('src')+')';
+				}
+			}
+		}        
+		ibg();
+	}
+	/*-- /IE 11 image--*/
 
 	
 })
