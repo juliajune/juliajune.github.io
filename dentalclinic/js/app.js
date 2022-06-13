@@ -1,5 +1,7 @@
 
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
+
+import '../libs/swiper.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 	/*--  TESTIMONIALS SLIDER --*/   
