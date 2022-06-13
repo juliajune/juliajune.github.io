@@ -1,9 +1,13 @@
 
 //import Swiper from 'swiper';
 
+import '../libs/svg4everybody.min.js';
 import '../libs/swiper.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+	/* -- SVG sprites polifill for IE 11-- */
+	svg4everybody(); 
 	/*--  TESTIMONIALS SLIDER --*/   
 	/*
 	let sliderTestimonials = new Swiper('.testimonials-slider', {
